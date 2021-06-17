@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MapMarkerWindow" id="iN0-l3-epB" userLabel="Map Marker Window" customClass="MapMarkerWindow" customModule="ApartmentManagement" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Vrb-j0-KGV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="248.5"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-Ru-yVd" userLabel="Description">
+                    <rect key="frame" x="207" y="263.5" width="31" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GW-vT-11c" userLabel="Address">
+                    <rect key="frame" x="10" y="293.5" width="394" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="KTg-5x-yYQ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Lwf-Uz-VG5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcK-9N-yJL" userLabel="Line">
+                    <rect key="frame" x="0.0" y="323.5" width="414" height="3"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="elD-vf-WlC"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O02-wT-egT" userLabel="Price">
+                    <rect key="frame" x="10" y="258.5" width="48" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="bMS-gf-bJf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IcK-9N-yJL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="3ra-Hq-VVO"/>
+                <constraint firstItem="O02-wT-egT" firstAttribute="top" secondItem="Vrb-j0-KGV" secondAttribute="bottom" constant="10" id="8Qg-Ec-6c6"/>
+                <constraint firstAttribute="trailing" secondItem="7GW-vT-11c" secondAttribute="trailing" constant="10" id="H1O-kj-uHd"/>
+                <constraint firstItem="7GW-vT-11c" firstAttribute="top" secondItem="O02-wT-egT" secondAttribute="bottom" constant="10" id="NKK-Ga-X3Q"/>
+                <constraint firstItem="IcK-9N-yJL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Okc-I7-pi2"/>
+                <constraint firstItem="MRa-Ru-yVd" firstAttribute="centerY" secondItem="O02-wT-egT" secondAttribute="centerY" id="P8R-Sr-oh5"/>
+                <constraint firstItem="IcK-9N-yJL" firstAttribute="top" secondItem="Vrb-j0-KGV" secondAttribute="bottom" constant="75" id="QfZ-Z5-dHO"/>
+                <constraint firstItem="Vrb-j0-KGV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ubo-N6-xf5"/>
+                <constraint firstItem="MRa-Ru-yVd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" id="at9-kF-w7w"/>
+                <constraint firstItem="Vrb-j0-KGV" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="bC9-UN-bC0"/>
+                <constraint firstAttribute="top" secondItem="Vrb-j0-KGV" secondAttribute="top" id="nDV-gm-GCk"/>
+                <constraint firstItem="Vrb-j0-KGV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="oeE-ef-YBU"/>
+                <constraint firstItem="7GW-vT-11c" firstAttribute="leading" secondItem="O02-wT-egT" secondAttribute="leading" id="p3y-6I-IY1"/>
+                <constraint firstItem="O02-wT-egT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zC7-uB-csT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="7GW-vT-11c" id="dus-tW-B4u"/>
+                <outlet property="descriptionLabel" destination="MRa-Ru-yVd" id="Wcd-OW-rdY"/>
+                <outlet property="photoView" destination="Vrb-j0-KGV" id="3hL-eV-OzL"/>
+                <outlet property="priceLabel" destination="O02-wT-egT" id="Bir-Ih-hWb"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-185.82589285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoImage" width="500" height="300"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
